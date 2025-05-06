@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MediReminder Pro</string>
+
+    <!-- Textos de navegación -->
+    <string name="menu_home">Inicio</string>
+    <string name="menu_settings">Configurar</string>
+    <string name="menu_history">Historial</string>
+
+    <!-- Textos de Home Fragment -->
+    <string name="welcome_message">Bienvenido a MediReminder Pro</string>
+    <string name="welcome_subtitle">Nunca olvides tomar tus medicamentos</string>
+    <string name="next_reminder_title">Próximo recordatorio:</string>
+    <string name="no_reminders_set">No hay recordatorios configurados</string>
+
+    <!-- Textos de Settings Fragment -->
+    <string name="settings_title">Configuración de Recordatorios</string>
+    <string name="reminder_1_title">Recordatorio #1</string>
+    <string name="reminder_2_title">Recordatorio #2</string>
+    <string name="reminder_3_title">Recordatorio #3</string>
+    <string name="not_set">No configurado</string>
+    <string name="select_time">Seleccionar hora</string>
+    <string name="enable_notifications">Activar notificaciones</string>
+    <string name="save_settings">Guardar configuración</string>
+
+    <!-- Textos de History Fragment -->
+    <string name="history_title">Historial de medicamentos</string>
+    <string name="no_history">No hay registros de medicamentos aún.</string>
+    <string name="record_medication">Registrar medicamento tomado ahora</string>
+
+    <!-- Notificaciones -->
+    <string name="notification_title">Recordatorio de medicamento</string>
+    <string name="notification_message">Es hora de tomar tu medicamento número %1$d</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

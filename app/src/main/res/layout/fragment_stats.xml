@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estadísticas"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Card de tomas por día -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomas por día"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="7">
+
+                    <!-- Domingo -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/day_0_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dom\n0"
+                            android:textColor="@color/black"
+                            android:gravity="center" />
+
+                        <ProgressBar
+                            android:id="@+id/day_0_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="8dp"
+                            android:layout_height="100dp"
+                            android:rotation="270"
+                            android:progress="0"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="50dp" />
+                    </LinearLayout>
+
+                    <!-- Lunes -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/day_1_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lun\n0"
+                            android:textColor="@color/black"
+                            android:gravity="center" />
+
+                        <ProgressBar
+                            android:id="@+id/day_1_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="8dp"
+                            android:layout_height="100dp"
+                            android:rotation="270"
+                            android:progress="0"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="50dp" />
+                    </LinearLayout>
+
+                    <!-- Martes -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/day_2_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mar\n0"
+                            android:textColor="@color/black"
+                            android:gravity="center" />
+
+                        <ProgressBar
+                            android:id="@+id/day_2_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="8dp"
+                            android:layout_height="100dp"
+                            android:rotation="270"
+                            android:progress="0"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="50dp" />
+                    </LinearLayout>
+
+                    <!-- Miércoles -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/day_3_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mié\n0"
+                            android:textColor="@color/black"
+                            android:gravity="center" />
+
+                        <ProgressBar
+                            android:id="@+id/day_3_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="8dp"
+                            android:layout_height="100dp"
+                            android:rotation="270"
+                            android:progress="0"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="50dp" />
+                    </LinearLayout>
+
+                    <!-- Jueves -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/day_4_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jue\n0"
+                            android:textColor="@color/black"
+                            android:gravity="center" />
+
+                        <ProgressBar
+                            android:id="@+id/day_4_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="8dp"
+                            android:layout_height="100dp"
+                            android:rotation="270"
+                            android:progress="0"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="50dp" />
+                    </LinearLayout>
+
+                    <!-- Viernes -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/day_5_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vie\n0"
+                            android:textColor="@color/black"
+                            android:gravity="center" />
+
+                        <ProgressBar
+                            android:id="@+id/day_5_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="8dp"
+                            android:layout_height="100dp"
+                            android:rotation="270"
+                            android:progress="0"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="50dp" />
+                    </LinearLayout>
+
+                    <!-- Sábado -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/day_6_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sáb\n0"
+                            android:textColor="@color/black"
+                            android:gravity="center" />
+
+                        <ProgressBar
+                            android:id="@+id/day_6_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="8dp"
+                            android:layout_height="100dp"
+                            android:rotation="270"
+                            android:progress="0"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="50dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card para hora más común -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/common_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hora más frecuente: --:--"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card para progreso semanal -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/weekly_progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Progreso semanal: 0%"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/weekly_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="0" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
